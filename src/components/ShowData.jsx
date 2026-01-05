@@ -65,7 +65,7 @@ export default function ShowData({ passwordArray, setPasswordArray, setForm , ge
         transition={Bounce}
       />
 
-      <table className="w-full border border-gray-400 border-collapse p-4">
+      <table className=" border border-gray-400 border-collapse p-4">
         <thead className="bg-gray-100">
           <tr className="bg-green-300">
             <th className="border border-gray-400 px-4 py-2">Website</th>
@@ -79,7 +79,7 @@ export default function ShowData({ passwordArray, setPasswordArray, setForm , ge
           {passwordArray.map((item, index) => (
             <tr key={index}>
               <td className="border border-gray-400 px-2 py-2">
-                <span className="flex gap-1">
+                <span className="flex flex-wrap gap-1"> 
                   <a target="_blank" href="">
                     {item.site}
                   </a>{" "}
@@ -92,9 +92,10 @@ export default function ShowData({ passwordArray, setPasswordArray, setForm , ge
                     alt=""
                   />
                 </span>
+                
               </td>
               <td className="border border-gray-400 px-2 py-2 ">
-                <span className="flex gap-1">
+                <span className="flex flex-wrap gap-1">
                   {" "}
                   {item.username}{" "}
                   <img
